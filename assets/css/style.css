@@ -454,3 +454,37 @@ h3.my-profession {
     text-transform: capitalize;
     color: var(--text-black-900);
 }
+
+/* Skills */
+.skills .skills-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.skills .list-inline {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-top: 20px;
+    padding: 0;
+    gap: 1rem;
+}
+
+.skills .skills-content .skills-text {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.skills .skills-content .skills-text h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: var(--text-black-900);
+}
+
+.dev-icons {
+    font-size: 3rem;
+}
+
+.dev-icons .list-inline-item i:hover {
+    color: var(--skin-color);
+}
