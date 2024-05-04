@@ -320,6 +320,17 @@ h3.my-profession {
     line-height: 25px;
     color: var(--text-black-700);
 }
+.about .about-content .about-text p.lead {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+.about .about-content .about-text p.mb-2 {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.about .about-content .about-text strong {
+    color: var(--skin-color);
+}
 .about .about-content .personal-info {
     flex: 0 0 100%;
     max-width: 100%;
@@ -330,6 +341,7 @@ h3.my-profession {
     flex: 0 0 50%;
     max-width: 50%;
 }
+
 .about .about-content .personal-info .info-item p {
     font-weight: 600;
     padding: 10px 0;
@@ -456,6 +468,9 @@ h3.my-profession {
 }
 
 /* Skills */
+.skills .container {
+    padding-bottom: 40px;
+}
 .skills .skills-content {
     flex: 0 0 100%;
     max-width: 100%;
@@ -482,9 +497,60 @@ h3.my-profession {
 }
 
 .dev-icons {
-    font-size: 3rem;
+    font-size: 3.5rem;
 }
 
 .dev-icons .list-inline-item i:hover {
     color: var(--skin-color);
+}
+
+.skills .skills-content h3.skills-title {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+.skills .skills-text .fa-ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.skills .fa-ul .fa-check {
+    color: var(--skin-color);
+}
+
+/* Project */
+.project .container {
+    padding-bottom: 40px;
+}
+.project .project-heading {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+
+.project .project-heading h2 {
+    color: var(--text-black-900);
+    font-weight: 500;
+}
+
+.project .project-item {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    margin-bottom: 30px;
+}
+
+.project .project-item-inner {
+    border: 6px solid var(--bg-black-100);
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.project .project-item-inner .project-img img {
+    width: 100%;
+    display: block;
 }
