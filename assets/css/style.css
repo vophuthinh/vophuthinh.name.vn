@@ -36,7 +36,7 @@ ul {
 .hidden {
     display: none !important;
 }
-.main-container {
+.main-content {
     padding-left: 270px;
 }
 .padd-15 {
@@ -334,7 +334,7 @@ h3.my-profession {
 .about .about-content .personal-info {
     flex: 0 0 100%;
     max-width: 100%;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .about .about-content .personal-info .info-item {
@@ -354,6 +354,9 @@ h3.my-profession {
     color: var(--text-black-700);
     margin-left: 4px;
     display: inline-block;
+}
+.social-icons {
+    margin-top: 20px;
 }
 
 .social-icons a {
@@ -496,7 +499,7 @@ h3.my-profession {
     color: var(--text-black-900);
 }
 
-.dev-icons {
+.skills .skills-content .dev-icons {
     font-size: 3.5rem;
 }
 
@@ -518,6 +521,12 @@ h3.my-profession {
     margin-bottom: 0;
 }
 
+.skills .skills-text .fa-ul li {
+    padding-left: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
 .skills .fa-ul .fa-check {
     color: var(--skin-color);
 }
@@ -553,4 +562,154 @@ h3.my-profession {
 .project .project-item-inner .project-img img {
     width: 100%;
     display: block;
+}
+
+/* contact */
+.contact-title {
+    color: var(--skin-color);
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.contact-sub-title {
+    color: var(--text-black-900);
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 60px;
+}
+
+.contact .contact-info-item {
+    flex: 0 0 25%;
+    max-width: 25%;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.contact .contact-info-item .icon {
+    display: inline-block;
+}
+
+.contact .contact-info-item .icon .fa {
+    font-size: 25px;
+    color: var(--skin-color);
+}
+.contact .contact-info-item h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-black-900);
+    text-transform: capitalize;
+    margin: 15px 0 5px;
+}
+
+.contact .contact-info-item p {
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--text-black-700);
+    font-weight: 400;
+}
+
+.contact .contact-form {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.contact .contact-form .col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.contact .contact-form .col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.contact .contact-form .form-item {
+    margin-bottom: 30px;
+}
+
+.contact .contact-form .form-item .form-control {
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    background: var(--bg-black-100);
+    border: 1px solid var(--bg-black-50);
+    padding: 10px 25px;
+    font-size: 16px;
+    color: var(--text-black-700);
+    transition: all 0.3s ease;
+}
+
+.contact .contact-form .form-item .form-control:focus {
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+.contact .contact-form .form-item textarea.form-control {
+    height: 140px;
+}
+.contact .contact-form .btn {
+    height: 50px;
+    padding: 0 50px;
+    border-radius: 25px;
+}
+
+/* responsive */
+@media (max-width: 1199px) {
+    .aside {
+        left: -270px;
+    }
+    .main-content {
+        padding-left: 0;
+    }
+    .about .about-content .personal-info .info-item p span {
+        margin-left: 0;
+    }
+}
+/* Tablet & mobile */
+@media (max-width: 991.98px) {
+    .contact .contact-info-item,
+    .project .project-item {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .home .home-info {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .home .home-img {
+        display: none;
+    }
+}
+
+/* Mobile*/
+@media (max-width: 767.98px) {
+    .contact .contact-form .col-6,
+    .contact .contact-info-item,
+    .project .project-item,
+    .about .about-content .experience,
+    .about .about-content .education {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .about .about-content .personal-info .info-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    h3.hello {
+        font-size: 24px;
+        margin: 15px 0;
+    }
+    h3.my-profession {
+        font-size: 23px;
+        margin: 15px 0;
+    }
+    .skills .skills-content .dev-icons {
+        font-size: 2.3rem;
+    }
+    .skills .skills-content .skills-text .fa-ul {
+        margin-top: 20px;
+    }
+    .skills .skills-content .skills-text-description {
+        font-size: 0.9rem;
+    }
 }
