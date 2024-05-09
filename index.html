@@ -26,9 +26,17 @@
         <!-- CSS Files -->
         <link rel="stylesheet" href="./assets/css/style.css" />
         <link rel="stylesheet" href="./assets/css/skins/color-1.css" />
+        <!-- Style Switcher -->
+        <link rel="stylesheet" href="./assets/css/style-switcher.css" />
+        <link rel="stylesheet" href="./assets/css/skins/color-1.css" class="alternate-style" title="color-1" />
+        <link rel="stylesheet" href="./assets/css/skins/color-2.css" class="alternate-style" title="color-2" disabled />
+        <link rel="stylesheet" href="./assets/css/skins/color-3.css" class="alternate-style" title="color-3" disabled />
+        <link rel="stylesheet" href="./assets/css/skins/color-4.css" class="alternate-style" title="color-4" disabled />
+        <link rel="stylesheet" href="./assets/css/skins/color-5.css" class="alternate-style" title="color-5" disabled />
+        <!-- Font Awesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     </head>
-    <body>
+    <body class="dark">
         <!-- Main Container Start -->
         <div class="main-container">
             <!-- Aside Start -->
@@ -41,19 +49,19 @@
                 </div>
                 <ul class="nav">
                     <li>
-                        <a href="#" class="active"><i class="fa fa-home"></i>Home</a>
+                        <a href="#home" class="active"><i class="fa fa-home"></i>Home</a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-user"></i>About</a>
+                        <a href="#about"><i class="fa fa-user"></i>About</a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-list"></i>Skills</a>
+                        <a href="#skills"><i class="fa fa-list"></i>Skills</a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-briefcase"></i>Project</a>
+                        <a href="#project"><i class="fa fa-briefcase"></i>Project</a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-envelope"></i>Contact</a>
+                        <a href="#contact"><i class="fa fa-envelope"></i>Contact</a>
                     </li>
                 </ul>
             </div>
@@ -61,14 +69,21 @@
             <!-- Main Content Start -->
             <div class="main-content">
                 <!-- Home Section Start -->
-                <section class="home section">
+                <section class="home active section" id="home">
                     <div class="container">
                         <div class="row">
                             <div class="home-info padd-15">
                                 <h3 class="hello">Hello, my name is <span class="name">Vo Phu Thinh</span></h3>
                                 <h3 class="my-profession">I'm a <span class="typing">Web Developer</span></h3>
-                                <p>I'm a web developer. I love to create beautiful and functional websites.</p>
-                                <a href="#contact" class="btn more-about-me">More About Me</a>
+                                <p>
+                                    I am a web developer, always interested in creating websites that are not only
+                                    visually appealing but also run smoothly and efficiently. The combination of
+                                    stunning design and optimal performance is what I always aim for in every project I
+                                    work on.
+                                </p>
+                                <a href="#!" download="CV_VoPhuThinh" class="btn"
+                                    >Download CV <i class="fa-solid fa-download"></i
+                                ></a>
                             </div>
                             <div class="home-img padd-15">
                                 <img src="./assets/images/hero.png" alt="Profile Photo" />
@@ -78,7 +93,7 @@
                 </section>
                 <!-- Main Container End -->
                 <!-- About Section Start -->
-                <section class="about section">
+                <section class="about section" id="about">
                     <div class="container">
                         <div class="row">
                             <div class="section-title padd-15">
@@ -100,8 +115,8 @@
                                             >
                                             I have experience working with
                                             <strong
-                                                >ReactJS (NextJS, Hook, Redux Toolkit) & VueJS (NuxtJS, Vuex), Material
-                                                UI, TailwindCSS, Bootstrap, Axios, and other technologies.</strong
+                                                >ReactJS ( Hook, Redux Toolkit),Material UI, TailwindCSS, Bootstrap,
+                                                Axios, and other technologies.</strong
                                             >
                                         </p>
                                         <p class="lead">
@@ -113,10 +128,7 @@
                                                 Back-end:</strong
                                             >
                                             I have experience working with
-                                            <strong
-                                                >Node.JS, TypeScript, ExpressJS, NestJS, MongoDB, MySQL, DynamoDB, and
-                                                other technologies.</strong
-                                            >
+                                            <strong>Node.JS, ExpressJS, MongoDB, and other technologies.</strong>
                                         </p>
                                     </div>
                                 </div>
@@ -150,16 +162,16 @@
                                             <a
                                                 class="facebook"
                                                 target="_blank"
-                                                href="https://www.facebook.com/trungquandev"
+                                                href="https://web.facebook.com/vox.phus.thijnh/"
                                             >
                                                 <i class="fab fa-facebook-f"></i>
                                             </a>
                                         </div>
                                         <div class="row">
-                                            <div class="buttons">
-                                                <a href="#" class="btn"
-                                                    >Download CV <i class="fa-solid fa-download"></i
-                                                ></a>
+                                            <div class="buttons padd-15">
+                                                <a href="#contact" data-section-index="1" class="btn hire-me"
+                                                    >Hire Me</a
+                                                >
                                             </div>
                                         </div>
                                     </div>
@@ -174,37 +186,40 @@
                                                     <div class="timeline-item">
                                                         <div class="circle-dot"></div>
                                                         <h3 class="timeline-date">
-                                                            <i class="fa fa-calendar"></i> 2003 - 2005
+                                                            <i class="fa fa-calendar"></i> Sept 2021 - Present
                                                         </h3>
-                                                        <h4 class="timeline-title">High School</h4>
+                                                        <h4 class="timeline-title">
+                                                            HCM University Of Technology (HUTECH)
+                                                        </h4>
                                                         <p class="timeline-text">
-                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                            Minus, repellat.
+                                                            I'm a formal university student in the Information
+                                                            Technology training program between Ho Chi Minh City
+                                                            University of Technology (HUTECH) and Malaysian Open
+                                                            University (OUM).
                                                         </p>
                                                     </div>
                                                     <!-- Timeline Item -->
                                                     <div class="timeline-item">
                                                         <div class="circle-dot"></div>
                                                         <h3 class="timeline-date">
-                                                            <i class="fa fa-calendar"></i> 2003 - 2005
+                                                            <i class="fa fa-calendar"></i> Jun 2023 - Aug 2023
                                                         </h3>
-                                                        <h4 class="timeline-title">High School</h4>
+                                                        <h4 class="timeline-title">
+                                                            Universiti Malaysia Sarawak (UNIMAS)
+                                                        </h4>
                                                         <p class="timeline-text">
-                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                            Minus, repellat.
+                                                            Intensive English Language Mobility Programme (IELMP),
+                                                            English Language
                                                         </p>
                                                     </div>
                                                     <!-- Timeline Item -->
                                                     <div class="timeline-item">
                                                         <div class="circle-dot"></div>
                                                         <h3 class="timeline-date">
-                                                            <i class="fa fa-calendar"></i> 2003 - 2005
+                                                            <i class="fa fa-calendar"></i> Mar 2022 - Aug 2023
                                                         </h3>
-                                                        <h4 class="timeline-title">High School</h4>
-                                                        <p class="timeline-text">
-                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                            Minus, repellat.
-                                                        </p>
+                                                        <h4 class="timeline-title">IronHack Viet Nam</h4>
+                                                        <p class="timeline-text">Course: Full Stack Web Developer</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -219,37 +234,12 @@
                                                     <div class="timeline-item">
                                                         <div class="circle-dot"></div>
                                                         <h3 class="timeline-date">
-                                                            <i class="fa fa-calendar"></i> 2003 - 2005
+                                                            <i class="fa fa-calendar"></i> Mar 2023 - Oct 2023 (8mos)
                                                         </h3>
-                                                        <h4 class="timeline-title">High School</h4>
-                                                        <p class="timeline-text">
-                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                            Minus, repellat.
-                                                        </p>
-                                                    </div>
-                                                    <!-- Timeline Item -->
-                                                    <div class="timeline-item">
-                                                        <div class="circle-dot"></div>
-                                                        <h3 class="timeline-date">
-                                                            <i class="fa fa-calendar"></i> 2003 - 2005
-                                                        </h3>
-                                                        <h4 class="timeline-title">High School</h4>
-                                                        <p class="timeline-text">
-                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                            Minus, repellat.
-                                                        </p>
-                                                    </div>
-                                                    <!-- Timeline Item -->
-                                                    <div class="timeline-item">
-                                                        <div class="circle-dot"></div>
-                                                        <h3 class="timeline-date">
-                                                            <i class="fa fa-calendar"></i> 2003 - 2005
-                                                        </h3>
-                                                        <h4 class="timeline-title">High School</h4>
-                                                        <p class="timeline-text">
-                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                            Minus, repellat.
-                                                        </p>
+                                                        <h4 class="timeline-title">
+                                                            Institute of Smart City and Management
+                                                        </h4>
+                                                        <p class="timeline-text">Website Management Support</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -262,7 +252,7 @@
                 </section>
                 <!-- About Section End -->
                 <!-- Skills Section Start -->
-                <section class="skills section">
+                <section class="skills section" id="skills">
                     <div class="container">
                         <div class="row">
                             <div class="section-title padd-15">
@@ -318,9 +308,6 @@
                                                 <i class="devicon-mongodb-plain-wordmark colored" title="MongoDB"></i>
                                             </li>
                                             <li class="list-inline-item">
-                                                <i class="devicon-github-original-wordmark colored" title="Github"></i>
-                                            </li>
-                                            <li class="list-inline-item">
                                                 <i class="devicon-git-plain-wordmark colored" title="Git"></i>
                                             </li>
                                             <li class="list-inline-item">
@@ -357,47 +344,45 @@
                                         <ul class="fa-ul">
                                             <li>
                                                 <i class="fa-li fa fa-check"></i>
-                                                <div><span style="font-weight: 600">Testing &amp; Debugging</span></div>
+                                                <div class="skills-workflow">
+                                                    <span style="font-weight: 600">Testing &amp; Debugging</span>
+                                                </div>
                                             </li>
                                             <li>
                                                 <i class="fa-li fa fa-check"></i>
-                                                <div>
+                                                <div class="skills-workflow">
                                                     <span style="font-weight: 600">Git, Github for Teamwork</span>
                                                 </div>
                                             </li>
                                             <li>
                                                 <i class="fa-li fa fa-check"></i>
-                                                <div><span style="font-weight: 600">Responsive Web Design</span></div>
+                                                <div class="skills-workflow">
+                                                    <span style="font-weight: 600">Responsive Web Design</span>
+                                                </div>
                                             </li>
                                             <li>
                                                 <i class="fa-li fa fa-check"></i>
-                                                <div>
+                                                <div class="skills-workflow">
                                                     <span style="font-weight: 600">Agile Development &amp; Scrum</span>
                                                 </div>
                                             </li>
                                             <li>
                                                 <i class="fa-li fa fa-check"></i>
-                                                <div><span style="font-weight: 600">English for Work!</span></div>
+                                                <div class="skills-workflow">
+                                                    <span style="font-weight: 600">English for Work!</span>
+                                                </div>
                                                 <div class="skills-text-description">
                                                     • For Reading: I can comfortably read and interpret documentation,
                                                     project specifications, and work totally in English.
                                                 </div>
                                                 <div class="skills-text-description">
                                                     • For Speaking: I am capable of basic communication and am always
-                                                    striving to improve everyday. I am now practicing communication with
-                                                    a Philippines teacher every weekend.
+                                                    striving to improve everyday.
                                                 </div>
                                                 <div class="skills-text-description">
                                                     • I would really like the opportunity to work at your organization,
                                                     where I would be able to practice my ability to speak English.
                                                 </div>
-                                            </li>
-                                            <li class="mt-2">
-                                                <i class="fa-li fa fa-check"></i>
-                                                <span style="font-weight: 600">My maxim:</span>
-                                                <em class="skills-text-description"
-                                                    >"Learning new everyday not the copycat of yesterday!"</em
-                                                >
                                             </li>
                                         </ul>
                                     </div>
@@ -408,7 +393,7 @@
                 </section>
                 <!-- Skills Section End -->
                 <!-- Project Section Start -->
-                <section class="project section">
+                <section class="project section" id="project">
                     <div class="container">
                         <div class="row">
                             <div class="section-title padd-15">
@@ -424,9 +409,11 @@
                             <!-- Project Item Start -->
                             <div class="project-item padd-15">
                                 <div class="project-item-inner shadow-dark">
-                                    <div class="project-img">
-                                        <img src="./assets/images/portfolio/portfolio-1.jpg" alt="" />
-                                    </div>
+                                    <a href="https://github.com/vophuthinh/vophuthinh.name.vn.git" target="_blank">
+                                        <div class="project-img">
+                                            <img src="./assets/images/portfolio/Resume.png" alt="" />
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                             <!-- Project Item End -->
@@ -434,7 +421,14 @@
                             <div class="project-item padd-15">
                                 <div class="project-item-inner shadow-dark">
                                     <div class="project-img">
-                                        <img src="./assets/images/portfolio/portfolio-2.jpg" alt="" />
+                                        <a
+                                            href="https://vophuthinh.github.io/Dental-Care-Landing-Page-with-Figma/"
+                                            target="_blank"
+                                        >
+                                            <img
+                                                src="./assets/images/portfolio/Dental-Care-Landing-Page-with-Figma.png"
+                                                alt="Dental-Care-Landing-Page-with-Figma"
+                                        /></a>
                                     </div>
                                 </div>
                             </div>
@@ -480,7 +474,7 @@
                 </section>
                 <!-- Project Section End -->
                 <!-- Contact Section Start -->
-                <section class="contact section">
+                <section class="contact section" id="contact">
                     <div class="container">
                         <div class="row">
                             <div class="section-title padd-15">
@@ -527,19 +521,22 @@
                                 <div class="row">
                                     <div class="form-item col-6 padd-15">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Enter Your Name" />
+                                            <input
+                                                type="text"
+                                                id="from_name"
+                                                class="form-control"
+                                                placeholder="Enter Your Name"
+                                            />
                                         </div>
                                     </div>
                                     <div class="form-item col-6 padd-15">
                                         <div class="form-group">
-                                            <input type="email" class="form-control" placeholder="Enter Your Email" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="form-item col-12 padd-15">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Subject" />
+                                            <input
+                                                type="email"
+                                                id="email_id"
+                                                class="form-control"
+                                                placeholder="Enter Your Email"
+                                            />
                                         </div>
                                     </div>
                                 </div>
@@ -548,7 +545,7 @@
                                         <div class="form-group">
                                             <textarea
                                                 name=""
-                                                id=""
+                                                id="message"
                                                 class="form-control"
                                                 placeholder="Messages"
                                             ></textarea>
@@ -557,7 +554,9 @@
                                 </div>
                                 <div class="row">
                                     <div class="form-item col-12 padd-15">
-                                        <button type="submit" class="btn">Send Message</button>
+                                        <button type="submit" onclick="onBtnClickSendMail()" class="btn">
+                                            Send Message
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -567,8 +566,41 @@
                 <!-- Contact Section End -->
             </div>
         </div>
-
+        <!-- Style Switcher Start -->
+        <div class="style-switcher">
+            <div class="style-switcher-toggler s-icon">
+                <i class="fas fa-cog fa-spin"></i>
+            </div>
+            <div class="day-night s-icon">
+                <i class="fas"></i>
+            </div>
+            <h4>Theme Colors</h4>
+            <div class="colors">
+                <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+                <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+                <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+                <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+                <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+            </div>
+        </div>
+        <!-- Style Switcher End -->
         <!-- JS Files -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"
+            integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
         <script src="js/script.js"></script>
+        <script src="js/style-switcher.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function () {
+                emailjs.init({
+                    publicKey: 'oF2S6I0ORnNleh8lm',
+                });
+            })();
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     </body>
 </html>
