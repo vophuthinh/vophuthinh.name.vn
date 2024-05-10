@@ -787,6 +787,10 @@ h3.my-profession {
     .section .container {
         margin-bottom: 40px;
     }
+
+    .skills .skills-content .text-workflow {
+        margin-bottom: 100px;
+    }
     .skills .skills-content .skills-text-description {
         font-size: 0.9rem;
     }
